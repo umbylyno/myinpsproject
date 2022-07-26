@@ -20,6 +20,11 @@ function App() {
     const onChange = (newDate) => setStart(newDate);
 
     return (
+        <div style={{
+            display: "flex",
+            height: '100vh',
+            backgroundImage: 'radial-gradient(circle, rgba(238,174,202,0) 0%, rgba(52,126,214,1) 100%)',
+        }}>
         <Container maxWidth={'sm'}>
             <Logo/>
             <Stack mt={10} spacing={4}>
@@ -42,6 +47,7 @@ function App() {
                 }
             </Stack>
         </Container>
+        </div>
     );
 }
 
